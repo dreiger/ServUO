@@ -1,0 +1,45 @@
+
+
+Line 47 Scripts/Engines/AI/OppositionGroup.cs
+
+
+Look's like this
+
+		private static OppositionGroup m_TerathansAndOphidians = new OppositionGroup( new Type[][]
+			{
+				new Type[]
+				{
+					typeof( TerathanAvenger ),
+					typeof( TerathanDrone ),
+					typeof( TerathanMatriarch ),
+					typeof( TerathanWarrior )  < Don't forget to add ","
+                                 },
+
+Add to look like this
+
+		private static OppositionGroup m_TerathansAndOphidians = new OppositionGroup( new Type[][]
+			{
+				new Type[]
+				{
+					typeof( TerathanAvenger ),
+					typeof( TerathanDrone ),
+					typeof( TerathanMatriarch ),
+					typeof( TerathanWarrior ),
+					typeof( NoxAvenger ),
+					typeof( NoxDrone ),
+					typeof( NoxMatriarch ),
+					typeof( NoxWarrior ),
+					typeof( NoxMage ),
+					typeof( NoxArcher )
+				},
+
+
+Paste This and add Coma "," end of line ( TeathanWarrior ),
+
+					typeof( NoxAvenger ),
+					typeof( NoxDrone ),
+					typeof( NoxMatriarch ),
+					typeof( NoxWarrior ),
+					typeof( NoxMage ),
+					typeof( NoxArcher )
+
